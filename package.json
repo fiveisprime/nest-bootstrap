@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npm install git://github.com/fiveisprime/unofficial_nodejs_nest.git"
+    "preinstall": "npm install git://github.com/fiveisprime/unofficial_nodejs_nest.git#error-handling"
   },
   "repository": "",
   "author": "Matt Hernandez <matt@modulus.io>",

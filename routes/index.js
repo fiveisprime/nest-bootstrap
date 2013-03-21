@@ -6,8 +6,8 @@ exports.index = function(req, res) {
     if (err) {
       res.render('error', { error: err.message });
     } else {
-      nest.get(function(info) {
-        res.render('index', { nest: info });
+      nest.get(function(data) {
+        res.render('index', { nest: data });
       });
     }
   });
