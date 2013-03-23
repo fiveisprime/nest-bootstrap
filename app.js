@@ -11,6 +11,9 @@ app.use(express.static(__dirname + '/public', { maxAge: oneDay }));
 app.set('view engine', 'hbs');
 
 app.get('/', routes.index);
+
 app.post('/temp', routes.setTemp);
+app.post('/mode', routes.setMode);
+app.post('/fanmode', routes.setFanMode);
 
 app.listen(3000);

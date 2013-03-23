@@ -27,3 +27,37 @@ exports.setTemp = function(req, res) {
     }
   });
 };
+
+exports.setMode = function(req, res) {
+  nest.login(config.username, config.password, function(err, data) {
+    if (err) {
+      res.render('error', { error: err.message });
+    } else {
+      var mode = req.param('mode');
+      if (mode === 'away') {
+        nest.setAway();
+      } else {
+        nest.setHome();
+      }
+
+      res.render('index', { nest: data });
+    }
+  });
+};
+
+exports.setFanMode = function(req, res) {
+  nest.login(config.username, config.password, function(err, data) {
+    if (err) {
+      res.render('error', { error: err.message });
+    } else {
+      var mode = req.param('fanmode');
+      if (mode === 'auto') {
+        nest.setFanModeAuto();
+      } else {
+        nest.setFanModeOn();
+      }
+
+      res.render('index', { nest: data });
+    }
+  });
+};

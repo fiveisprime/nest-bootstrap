@@ -10,6 +10,10 @@ h3, h4 {
   font-family: Georgia, serif;
 }
 
+form {
+  margin-bottom: 50px;
+}
+
 .temp-form {
   margin-top: 140px;
 }
@@ -17,29 +21,29 @@ h3, h4 {
 .btn {
   display: inline-block;
   color: #ffffff;
-  background-color: #ffc477;
-  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25) );
-  background: -moz-linear-gradient( center top, #ffc477 5%, #fb9e25 100% );
-  -webkit-box-shadow:inset 0px 1px 0px 0px #fce2c1;
-     -moz-box-shadow:inset 0px 1px 0px 0px #fce2c1;
-          box-shadow:inset 0px 1px 0px 0px #fce2c1;
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25');
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 15px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #287ace;
+  border: 1px solid #469df5;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #cae3fc;
+     -moz-box-shadow: inset 0px 1px 0px 0px #cae3fc;
+          box-shadow: inset 0px 1px 0px 0px #cae3fc;
+  background-color:#79bbff;
+  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #4197ee) );
+  background: -moz-linear-gradient( center top, #79bbff 5%, #4197ee 100% );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#4197ee');
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
-  border: 1px solid #eeb44f;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 6px 24px;
-  text-decoration: none;
-  text-shadow: 1px 1px 0px #cc9f52;
 }
 
 .btn:hover {
-  background-color: #fb9e25;
-  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fb9e25), color-stop(1, #ffc477) );
-  background: -moz-linear-gradient( center top, #fb9e25 5%, #ffc477 100% );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb9e25', endColorstr='#ffc477');
+  background-color: #4197ee;
+  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
+  background: -moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
 }
 
 .btn:active {
